@@ -1,0 +1,23 @@
+/* 
+  当您在工作空间中有一个定义项目上下文的jsconfig.json文件时，JavaScript体验会得到改进。
+  以上是官话 大白话的意思是提高在 vscode 中写项目时舒适度的
+*/
+{
+  "compilerOptions": {
+    "baseUrl": ".", //指定项目源代码的起始路径
+    "allowSyntheticDefaultImports": true, //允许从没有默认导出的模块进行默认导入，这不影响代码，只是进行类型检查
+    "module": "ES2015", // 使用es6的模块管理方式
+    "paths": {
+      "~/*": ["./*"],
+      // 解决项目中使用@作为路径别名，导致vscode无法跳转文件的问题
+      "@/*": ["src/*"]
+    },
+    // 解决prettier对于装饰器语法的警告
+    "experimentalDecorators": true,
+    // 解决.jsx文件无法快速跳转的问题
+    "jsx": "preserve",
+    "allowJs": true //允许 JavaScript 文件
+  },
+  // 提高 IDE 性能 编译时排除以下文件 提高vscode的性能
+  "exclude": ["node_modules", "dist"]
+}

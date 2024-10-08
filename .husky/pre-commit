@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# //git commit之前，会执行这个脚本，错误则不会暂存，成功则会暂存
+# pnpm lint-staged

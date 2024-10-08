@@ -1,0 +1,74 @@
+:deep(.el-checkbox-group) {
+  .el-checkbox {
+    .el-checkbox__input {
+      vertical-align: text-top;
+
+      &.is-checked {
+        .el-checkbox__inner {
+          background: $primary-color;
+          border-color: $primary-color;
+        }
+
+        & + .el-checkbox__label {
+          color: $primary-color;
+        }
+      }
+
+      .el-checkbox__inner {
+        width: $medium-font-size;
+        height: $medium-font-size;
+
+        &::after {
+          top: 2px;
+          left: 5px;
+        }
+      }
+    }
+
+    .el-checkbox__label {
+      @include font-common-style;
+    }
+  }
+}
+
+/* checkbox选择框样式修改 */
+:deep(.el-checkbox) {
+  // 选框
+  .el-checkbox__inner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    // 中间的 “✔” 的位置调整
+    &::after {
+      top: 2px;
+      left: 5px;
+    }
+
+    &:hover {
+      border-color: #4a62e7;
+    }
+  }
+
+  // label
+  .el-checkbox__label {
+    color: #1d1f24;
+  }
+
+  // 选中且不被禁用的样式
+  .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: #4a62e7;
+    border-color: #4a62e7;
+  }
+
+  // 选中且被禁用的样式
+  .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+    background: rgb(177 187 247);
+    border-color: rgb(177 187 247);
+  }
+
+  // 选中后中间的 “✔” 的样式
+  .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+    border-color: #fff;
+  }
+}

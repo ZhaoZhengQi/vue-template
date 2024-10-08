@@ -1,0 +1,72 @@
+// 全局自定义变量
+$primaryColor: #69c8d3;
+
+/************* 字体大小 *******************/
+$titleMain-font-size: 28px; // h1 大标题
+$titleSub-font-size: 24px; // h2 二级标题
+$large-font-size: 18px; // h2 标题
+$medium-font-size: 16px; // h3 小标题
+$small-font-size: 14px; // h4 正文
+$mini-font-size: 12px;
+
+/************* 字体类型 *****************/
+$font-family: 'Microsoft YaHei', sans-serif; // 中文字体
+
+/********* 颜色 **********/
+$white-color: #fff; // 白色
+$black-color: #000; // 黑色
+$pagination-background-color: #bdcbe5; // 分页背景色
+
+// 主色
+$primary-light-color: #fd7560;
+$primary-color: #155bd4;
+$primary-deep-color: #fd3415;
+
+// 成功色
+$success-light-color: #26d2be;
+$success-color: #2da641;
+$success-deep-color: #04bca6;
+
+// 警告色
+$warning-light-color: #fd924e;
+$warning-color: #ed6a0c;
+$warning-deep-color: #f2711f;
+
+// 危险色
+$danger-light-color: #f36161;
+$danger-color: #d40000;
+$danger-deep-color: #dc4646;
+
+// info灰色
+$info-color: #778ca3;
+
+// 字体颜色
+$color-text-primary: #646566; // ⽂字⾊ 主文字色
+$color-text-regular: #323233; // ⽂字⾊ （默认⾊）
+$color-text-placeholder: #c8c9cc; // 默认提⽰⽂字文字和disable
+$black-light-color: #778ca3; // 用于副标题、或辅助信息的文字
+
+// border
+$border-color-base: #123; // 边框、线⾊
+
+// background
+$background-color-base: #f7f8fa; // 背景色
+
+/*********** 尺寸 ************/
+$header-height: 60px; // 页头菜单栏的高度
+$normal-space: 20px; // 页面tab 标题与内容模块之间的间隔
+$small-form-field-height: 34px; // Form表单的项的高度
+$page-min-width: 1200px; // 浏览器页面的最小宽度
+$aside-menu-width: 180px; // 左侧菜单栏的宽度
+$form-label-width: 220px; // form标签的宽度
+$button-height: 40px; // button高度
+
+// 声明一些公共样式 mixin
+@mixin font-common-style {
+  font-family: $font-family;
+  font-size: $small-font-size;
+}
+
+@mixin medium-button-common-style {
+  border-radius: 6px;
+}

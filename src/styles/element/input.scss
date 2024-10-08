@@ -1,0 +1,46 @@
+:deep(.el-input) {
+  width: 120px;
+
+  .el-input__wrapper {
+    padding: 0 8px;
+  }
+
+  .el-input__inner {
+    @include font-common-style;
+
+    height: 32px;
+
+    // &:hover {
+    //   border: 1px solid tomato;
+    // }
+
+    &:focus {
+      color: $info-color;
+    }
+
+    &::placeholder {
+      color: $color-text-placeholder;
+    }
+  }
+
+  // 修改input的suffix图标样式
+  .el-input__suffix {
+    .el-input__icon {
+      margin-left: 4px;
+      font-size: 20px;
+      color: tomato;
+    }
+  }
+
+  // 修改input prefix图标样式
+  .el-input__prefix {
+    .el-input__prefix-inner {
+      font-size: 20px;
+      color: green;
+
+      .el-input__icon {
+        margin-right: 2px;
+      }
+    }
+  }
+}

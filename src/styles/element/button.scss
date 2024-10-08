@@ -1,0 +1,83 @@
+:deep(.el-button) {
+  // 字体颜色
+  & span {
+    color: $primary-deep-color;
+  }
+
+  &.el-button--default {
+    @include font-common-style;
+    @include medium-button-common-style;
+
+    background: $background-color-base;
+    border: 1px solid $background-color-base;
+  }
+
+  // 按钮的背景颜色样式
+  &.el-button--primary {
+    @include font-common-style;
+    @include medium-button-common-style;
+
+    background: $primary-color;
+    border: 1px solid $primary-color;
+
+    span {
+      color: $white-color;
+    }
+
+    // 鼠标经过的button样式
+    &:hover {
+      background: $primary-deep-color;
+      border: 1px solid $primary-deep-color;
+    }
+
+    // 禁用状态的下的button样式
+    &.is-disabled {
+      color: #ccc;
+      background-color: #b3b3b3;
+      border: 1px solid #fff;
+
+      // 禁用状态的下的button鼠标hover样式
+      &:hover {
+        background-color: $primary-light-color;
+        border: 1px solid $primary-light-color;
+      }
+    }
+
+    // 鼠标摁下的样式
+    &:focus {
+      background-color: rgb(159 230 240);
+    }
+  }
+
+  &.el-button--success {
+    @include font-common-style;
+    @include medium-button-common-style;
+
+    background: $success-color;
+    border: 1px solid $success-color;
+  }
+
+  &.el-button--info {
+    @include font-common-style;
+    @include medium-button-common-style;
+
+    background: $info-color;
+    border: 1px solid $info-color;
+  }
+
+  &.el-button--warning {
+    @include font-common-style;
+    @include medium-button-common-style;
+
+    background: $warning-color;
+    border: 1px solid $warning-color;
+  }
+
+  &.el-button--danger {
+    @include font-common-style;
+    @include medium-button-common-style;
+
+    background: $danger-color;
+    border: 1px solid $danger-color;
+  }
+}

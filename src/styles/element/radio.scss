@@ -1,0 +1,53 @@
+:deep(.el-radio-group) {
+  .el-radio {
+    .el-radio__input {
+      // 未选中的样式
+      &:not(:checked) {
+        // 选框的样式
+        .el-radio__inner {
+          width: $medium-font-size;
+          height: $medium-font-size;
+          border-color: $success-light-color;
+        }
+
+        // 文本样式
+        & + .el-radio__label {
+          color: $warning-light-color;
+        }
+      }
+
+      // 选中的样式
+      &.is-checked {
+        .el-radio__inner {
+          background: $primary-color;
+          border-color: $primary-color;
+        }
+
+        & + .el-radio__label {
+          color: $primary-color;
+        }
+      }
+
+      // 选框的样式
+      .el-radio__inner {
+        width: $medium-font-size;
+        height: $medium-font-size;
+        line-height: $medium-font-size;
+
+        // 关闭圆角
+        border-radius: 0;
+
+        // 选中的内圈的样式
+        &::after {
+          width: calc($medium-font-size / 2);
+          height: calc($medium-font-size / 2);
+          background-color: $primary-color;
+        }
+      }
+    }
+
+    .el-radio__label {
+      @include font-common-style;
+    }
+  }
+}

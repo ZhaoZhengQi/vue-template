@@ -1,0 +1,33 @@
+// styles/element/index.scss
+// 定义的变量和公共mixin
+
+/* 只需要重写你需要的即可-全局生效 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #3f9a12,
+    ),
+    'success': (
+      'base': #67c23a,
+    ),
+    'warning': (
+      'base': #e6a23c,
+    ),
+    'danger': (
+      'base': #f56c6c,
+    ),
+    'error': (
+      'base': #f56c6c,
+    ),
+    'info': (
+      'base': #909399,
+    ),
+  ),
+  $button-padding-horizontal: (
+    'default': 40px,
+  )
+);
+
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+// @use 'element-plus/theme-chalk/src/index.scss' as *;
