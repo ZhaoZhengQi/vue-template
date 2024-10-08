@@ -8,6 +8,12 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    IconEpApple: typeof import('~icons/ep/apple')['default']
+    IconEpEdit: typeof import('~icons/ep/edit')['default']
+    IEpAddLocation: typeof import('~icons/ep/add-location')['default']
+    IEpEdit: typeof import('~icons/ep/edit')['default']
+    IEpEditLocation: typeof import('~icons/ep/edit-location')['default']
+    IEpLock: typeof import('~icons/ep/lock')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

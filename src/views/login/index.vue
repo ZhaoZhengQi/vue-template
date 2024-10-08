@@ -2,6 +2,13 @@
   <div class="login-page">
     <h1>登录页</h1>
     <button @click="login">登录</button>
+    <!-- <el-icon> -->
+    <!-- <Edit /> -->
+    <!-- <IconEpEdit /> -->
+    <!-- <i-ep-edit-location /> -->
+    <el-icon><i-ep-edit /></el-icon>
+    <!-- <IconEpApple /> -->
+    <!-- </el-icon> -->
   </div>
 </template>
 

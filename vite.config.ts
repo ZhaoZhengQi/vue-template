@@ -1,15 +1,15 @@
 import path from "path";
-import { defineConfig, loadEnv } from "vite";
-import type { UserConfig, ConfigEnv } from "vite";
 import { fileURLToPath } from "url";
 import vue from "@vitejs/plugin-vue";
 import Icons from "unplugin-icons/vite";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import { defineConfig, loadEnv } from "vite";
+import type { UserConfig, ConfigEnv } from "vite";
 import { viteMockServe } from "vite-plugin-mock";
 import AutoImport from "unplugin-auto-import/vite";
-import Components from "unplugin-vue-components/vite";
-import ElementPlus from "unplugin-element-plus/vite";
 import IconsResolver from "unplugin-icons/resolver";
+import ElementPlus from "unplugin-element-plus/vite";
+import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 const pathSrc = path.resolve(__dirname, "src");
@@ -59,9 +59,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
           ElementPlusResolver(),
           // 自动注册图标组件
           IconsResolver({
-            customCollections: ["custom"],
-            componentPrefix: "icon",
-            // enabledCollections: ['ep'],
+            enabledCollections: ["ep"],
           }),
         ],
         dts: path.resolve(pathSrc, "components.d.ts"),
