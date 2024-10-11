@@ -9,6 +9,7 @@
     "test": "vitest",
     "preview": "vite preview",
     "prepare": "husky install",
+    "lint:lint-staged": "lint-staged",
     "lint:prettier": "prettier --write **/*.{js,json,tsx,css,less,scss,vue,html,md}"
   },
   "dependencies": {
