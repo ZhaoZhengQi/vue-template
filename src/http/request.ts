@@ -8,7 +8,7 @@ import type {
 import { getMessageInfo } from "./status";
 import { ElMessage } from "element-plus";
 const service: AxiosInstance = axios.create({
-  baseURL: Boolean(import.meta.env.VITE_APP_USE_MOCK)
+  baseURL: import.meta.env.VITE_APP_USE_MOCK
     ? import.meta.env.VITE_APP_MOCK_BASEURL
     : import.meta.env.VITE_APP_API_BASEURL,
   timeout: 10000,

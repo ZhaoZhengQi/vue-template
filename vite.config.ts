@@ -18,7 +18,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   // 获取当前工作目录
   const root = process.cwd();
   // 获取环境变量
-  const env = loadEnv(mode, root);
+  // const env = loadEnv(mode, root);
   return {
     // 项目根目录
     root,
