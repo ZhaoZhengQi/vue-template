@@ -7,12 +7,13 @@ import requestInstance from "./request";
 export function get<T = any, U = any>(
   url: string,
   params?: U,
-
   config?: AxiosRequestConfig,
 ): Promise<T> {
   return requestInstance({
-    url123,
+    url,
+
     method: "GET",
+
     params: params,
     ...config,
   });
