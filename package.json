@@ -8,8 +8,8 @@
     "test": "vitest",
     "preview": "vite preview",
     "prepare": "npx husky install",
-    "lint:lint-staged": "lint-staged",
-    "lint:prettier": "prettier --write **/*.{js,json,tsx,css,less,scss,vue,html,md}"
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write '**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}'"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
