@@ -5,7 +5,7 @@ import requestInstance from "./request";
 export function get<T = any, U = any>(
   url: string,
   params?: U,
-  config?: AxiosRequestConfig
+  config?: AxiosRequestConfig,
 ): Promise<T> {
   return requestInstance({ url, method: "GET", params: params, ...config });
 }
@@ -13,7 +13,7 @@ export function get<T = any, U = any>(
 export function post<T = any, U = any>(
   url: string,
   data: U,
-  config?: AxiosRequestConfig
+  config?: AxiosRequestConfig,
 ): Promise<T> {
   return requestInstance({ url, method: "POST", data: data, ...config });
 }

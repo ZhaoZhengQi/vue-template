@@ -21,7 +21,7 @@ service.interceptors.request.use(
   },
   (error: AxiosError) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 // axios响应拦截
@@ -51,7 +51,7 @@ service.interceptors.response.use(
       message: "网络异常,请稍后再试!",
       type: "error",
     });
-  }
+  },
 );
 
 export default service;

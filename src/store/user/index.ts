@@ -51,7 +51,7 @@ export const useUserStoreHook = defineStore(
       storage: sessionStorage,
       pick: ["accessToken"],
     },
-  }
+  },
 );
 
 // 导出该Store
