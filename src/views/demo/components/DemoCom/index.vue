@@ -6,5 +6,6 @@
 
 <style lang="less" scoped>
 .demoComComponents {
+	height: 100%;
 }
 </style>
