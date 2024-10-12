@@ -1,9 +1,9 @@
-import { RouteRecordRaw } from 'vue-router'
+import { RouteRecordRaw } from "vue-router"
 export default {
 	path: "{{name}}",
 	name: "{{name}}",
-	component: () => import('@/views/{{name}}/index.vue'),
+	component: () => import("@/views/{{name}}/index.vue"),
 	meta: {
-       title: '{{menu}}' 
-	},
+		title: "{{menu}}"
+	}
 } as RouteRecordRaw
