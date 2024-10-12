@@ -2,7 +2,6 @@
   "name": "my-vue-app",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite --mode development",
     "build": "vite build",
@@ -12,7 +11,7 @@
     "eslint": "eslint --fix",
     "lint-staged": "lint-staged",
     "prettier": "prettier --write '**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}'",
-    "commitlint": "commitlint --config commitlint.config.js"
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",

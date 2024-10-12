@@ -12,13 +12,7 @@ module.exports = {
     // "subject-empty": [2, "never"],
     // // 信息类型不能未空
     // "type-empty": [2, "never"],
-    "type-case": [0],
-    "type-empty": [0],
-    "scope-empty": [0],
-    "scope-case": [0],
-    "subject-full-stop": [0, "never"],
-    "subject-case": [0, "never"],
-    "header-max-length": [0, "always", 72],
+
     // 提交信息的类型 下文有介绍
     "type-enum": [
       2,
@@ -37,5 +31,12 @@ module.exports = {
         "build", // 打包
       ],
     ],
+    "type-case": [0],
+    "type-empty": [0],
+    "scope-empty": [0],
+    "scope-case": [0],
+    "subject-full-stop": [0, "never"],
+    "subject-case": [0, "never"],
+    "header-max-length": [0, "always", 72],
   },
 };
